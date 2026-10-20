@@ -486,32 +486,31 @@ body {
 
 .bio-geo-meta {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
   padding-top: var(--space-sm);
   border-top: 1px solid var(--border-hairline);
 }
 
-.geo-tag {
+.status-available-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
-  color: var(--accent-red);
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.geo-tag svg {
-  color: var(--accent-red);
-  flex-shrink: 0;
+  color: var(--text-primary);
+  padding: 8px 14px;
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  width: fit-content;
 }
 
-.geo-status {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-  line-height: 1.4;
+.status-available-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
+  flex-shrink: 0;
 }
 
 .bio-narrative-col {
