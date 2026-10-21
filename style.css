@@ -490,7 +490,7 @@ body {
   border-top: 1px solid var(--border-hairline);
 }
 
-.status-available-badge {
+.geo-coords {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -504,13 +504,21 @@ body {
   width: fit-content;
 }
 
-.status-available-dot {
+.geo-coords::before {
+  content: '';
   width: 7px;
   height: 7px;
   background-color: #22c55e;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
   flex-shrink: 0;
+}
+
+.geo-place {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding: 8px 14px;
 }
 
 .bio-narrative-col {
