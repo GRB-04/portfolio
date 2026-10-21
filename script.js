@@ -17,18 +17,14 @@ function initHeaderScroll() {
   const header = document.getElementById('header');
   if (!header) return;
 
-  let lastScrollY = window.scrollY;
-
   const onScroll = () => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > 40) {
+    if (window.scrollY > 40) {
       header.style.backgroundColor = 'rgba(7, 7, 8, 0.95)';
       header.style.borderBottomColor = 'rgba(255, 255, 255, 0.12)';
     } else {
       header.style.backgroundColor = 'rgba(7, 7, 8, 0.88)';
       header.style.borderBottomColor = 'rgba(255, 255, 255, 0.08)';
     }
-    lastScrollY = currentScrollY;
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });

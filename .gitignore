@@ -2,3 +2,5 @@
 node_modules
 frontend-craft
 assets/preview-old.html
+
+.vercel
